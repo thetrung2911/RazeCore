@@ -24,7 +24,7 @@ public class RazeCore {
         }
         return UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
     }
-    /// <#Description#>
+    /// rezecolor
     public static var razeColor: UIColor {
         return self.colorFromHexString("006736")
     }
