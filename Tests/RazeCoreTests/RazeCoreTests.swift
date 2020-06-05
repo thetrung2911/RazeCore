@@ -9,5 +9,6 @@ final class RazeCoreTests: XCTestCase {
     }
     static var allTests = [
         ("testColorRedEqual", testColorRedEqual),
+        
     ]
 }

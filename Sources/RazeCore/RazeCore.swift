@@ -1,14 +1,14 @@
 
 import UIKit
 
-class RazeCore {
+public class RazeCore {
     
     /// Chuyển đổi từ mã hex sang UIcolor
     /// - Parameters:
     ///   - hexString: mã màu hex
     ///   - alpha: độ trong suốt
     /// - Returns: trả về Uicolor từ mã hex
-    class func colorFromHexString(_ hexString: String, alpha: CGFloat = 1.0) -> UIColor {
+    internal class func colorFromHexString(_ hexString: String, alpha: CGFloat = 1.0) -> UIColor {
         let r, g, b: CGFloat
         let offset = hexString.hasPrefix("#") ? 1:0
         let start = hexString.index(hexString.startIndex, offsetBy: offset)
@@ -23,5 +23,9 @@ class RazeCore {
             return UIColor(red: r, green: g, blue: b, alpha: alpha)
         }
         return UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
+    }
+    /// <#Description#>
+    public static var razeColor: UIColor {
+        return self.colorFromHexString("006736")
     }
 }
