@@ -1,2 +1,3 @@
 # RazeCore
-freamwork
+
+A description of this package.
